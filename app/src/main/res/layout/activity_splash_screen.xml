@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="splashScreenVM" type="com.kirtikumarsapplication.app.modules.splash_screen.data.viewmodel.SplashScreenVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameAndroidLarge"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/imageImage726"
+            android:layout_gravity="top|center"
+            android:layout_height="@dimen/_40pxh"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_73pxh"
+            android:layout_marginStart="@dimen/_73pxh"
+            android:layout_marginTop="@dimen/_343pxv"
+            android:layout_width="@dimen/_212pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_image726"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_image726"/>
+    </FrameLayout>
+</layout>

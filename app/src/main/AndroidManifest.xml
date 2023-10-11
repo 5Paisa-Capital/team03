@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.kirtikumarsapplication.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.kirtikumarsapplication.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity android:exported="true"
+            android:name="com.kirtikumarsapplication.app.modules.splash_screen.ui.SplashScreenActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.kirtikumarsapplication.app.modules.androidlarge776.ui.AndroidLarge776Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.kirtikumarsapplication.app.modules.personalDetails.ui.PersonalDetailsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.kirtikumarsapplication.app.modules.identity_proof.ui.IdentityProofActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.kirtikumarsapplication.app.modules.addressDetails.ui.AddressDetailsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.kirtikumarsapplication.app.modules.professional_details.ui.ProfessionalDetailsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.kirtikumarsapplication.app.modules.loan_details.ui.LoanDetailsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.kirtikumarsapplication.app.modules.androidlarge777.ui.AndroidLarge777Activity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>
