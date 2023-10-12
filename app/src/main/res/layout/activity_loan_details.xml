@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
@@ -14,12 +14,39 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <FrameLayout
+            android:id="@+id/frameStack"
+            style="@style/groupStylewhite_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_62pxv"
+            android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageImage726"
+                android:layout_width="@dimen/_120pxh"
+                android:layout_height="@dimen/_22pxh"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_40pxh"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_marginEnd="@dimen/_40pxh"
+                android:layout_marginBottom="@dimen/_19pxv"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_image726"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_image726" />
+        </FrameLayout>
+
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toTopOf="@+id/save_as_draft_btn"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameStack">
 
             <LinearLayout
                 android:id="@+id/linearAndroidLarge"
@@ -28,28 +55,6 @@
                 android:layout_height="match_parent"
                 android:gravity="start"
                 android:orientation="vertical">
-
-                <FrameLayout
-                    android:id="@+id/frameStack"
-                    style="@style/groupStylewhite_1"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_62pxv"
-                    android:layout_marginTop="@dimen/_12pxv">
-
-                    <ImageView
-                        android:id="@+id/imageImage726"
-                        android:layout_width="@dimen/_120pxh"
-                        android:layout_height="@dimen/_22pxh"
-                        android:layout_gravity="center"
-                        android:layout_marginStart="@dimen/_40pxh"
-                        android:layout_marginTop="@dimen/_20pxv"
-                        android:layout_marginEnd="@dimen/_40pxh"
-                        android:layout_marginBottom="@dimen/_19pxv"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/img_image726"
-                        tools:ignore="ContentDescription"
-                        tools:src="@drawable/img_image726" />
-                </FrameLayout>
 
                 <LinearLayout
                     android:id="@+id/linearColumnOne"
@@ -132,16 +137,16 @@
 
                                 <View
                                     android:id="@+id/viewRectangle30405"
-                                    android:layout_width="@dimen/_8pxh"
-                                    android:layout_height="@dimen/_8pxh"
+                                    android:layout_width="@dimen/_6pxh"
+                                    android:layout_height="@dimen/_6pxh"
                                     android:layout_gravity="start"
                                     android:background="@drawable/rectangle_bg_deep_purple_900_75_radius_4" />
                             </LinearLayout>
 
                             <View
                                 android:id="@+id/viewRectangle5396"
-                                android:layout_width="@dimen/_8pxh"
-                                android:layout_height="@dimen/_8pxh"
+                                android:layout_width="@dimen/_6pxh"
+                                android:layout_height="@dimen/_6pxh"
                                 android:layout_gravity="end"
                                 android:layout_marginStart="@dimen/_125pxh"
                                 android:layout_marginEnd="@dimen/_125pxh"
@@ -149,8 +154,8 @@
 
                             <View
                                 android:id="@+id/viewRectangle30403"
-                                android:layout_width="@dimen/_8pxh"
-                                android:layout_height="@dimen/_8pxh"
+                                android:layout_width="@dimen/_6pxh"
+                                android:layout_height="@dimen/_6pxh"
                                 android:layout_gravity="end"
                                 android:layout_marginStart="@dimen/_62pxh"
                                 android:layout_marginEnd="@dimen/_62pxh"
@@ -158,8 +163,8 @@
 
                             <View
                                 android:id="@+id/viewRectangle30404"
-                                android:layout_width="@dimen/_8pxh"
-                                android:layout_height="@dimen/_8pxh"
+                                android:layout_width="@dimen/_6pxh"
+                                android:layout_height="@dimen/_6pxh"
                                 android:layout_gravity="end"
                                 android:layout_marginStart="@dimen/_10pxh"
                                 android:layout_marginEnd="@dimen/_1pxh"
@@ -167,8 +172,8 @@
 
                             <View
                                 android:id="@+id/viewRectangle5398"
-                                android:layout_width="@dimen/_8pxh"
-                                android:layout_height="@dimen/_8pxh"
+                                android:layout_width="@dimen/_6pxh"
+                                android:layout_height="@dimen/_6pxh"
                                 android:layout_gravity="start"
                                 android:layout_marginStart="@dimen/_124pxh"
                                 android:layout_marginEnd="@dimen/_124pxh"
@@ -176,8 +181,8 @@
 
                             <View
                                 android:id="@+id/viewRectangle30406"
-                                android:layout_width="@dimen/_8pxh"
-                                android:layout_height="@dimen/_8pxh"
+                                android:layout_width="@dimen/_6pxh"
+                                android:layout_height="@dimen/_6pxh"
                                 android:layout_gravity="start"
                                 android:layout_marginStart="@dimen/_62pxh"
                                 android:layout_marginEnd="@dimen/_62pxh"
@@ -246,12 +251,6 @@
                                     tools:ignore="ContentDescription"
                                     tools:src="@drawable/img_image728" />
 
-                                <View
-                                    android:id="@+id/viewRectangle29402"
-                                    android:layout_width="@dimen/_71pxh"
-                                    android:layout_height="@dimen/_71pxh"
-                                    android:layout_gravity="start"
-                                    android:background="@drawable/rectangle_bg_indigo_a200_radius_6" />
                             </FrameLayout>
                         </FrameLayout>
 
@@ -277,7 +276,6 @@
 
                             <TextView
                                 android:id="@+id/txtShareyourloan"
-                                style="@style/txtIntermedium12"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/_8pxv"
@@ -313,7 +311,6 @@
 
                                 <TextView
                                     android:id="@+id/txt100Datasecur"
-                                    style="@style/txtIntermedium12_1"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="@dimen/_5pxh"
@@ -330,7 +327,7 @@
                     </LinearLayout>
 
                     <EditText
-                        android:id="@+id/etGroup48103700"
+                        android:id="@+id/etLoanType"
                         style="@style/etRoundedOutline_1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -347,12 +344,13 @@
                         android:paddingEnd="@dimen/_30pxh"
                         android:paddingBottom="@dimen/_14pxv"
                         android:singleLine="true"
-                        android:text="@={loanDetailsVM.loanDetailsModel.etGroup48103700Value}"
+                        android:text="@={loanDetailsVM.loanDetailsModel.etLoanTypeValue}"
+                        android:textColor="@color/black"
                         android:textColorHint="@color/gray_500"
                         tools:ignore="Autofill" />
 
                     <EditText
-                        android:id="@+id/etGroup48103708"
+                        android:id="@+id/etLoanAmount"
                         style="@style/etRoundedOutline_1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -369,7 +367,8 @@
                         android:paddingEnd="@dimen/_30pxh"
                         android:paddingBottom="@dimen/_15pxv"
                         android:singleLine="true"
-                        android:text="@={loanDetailsVM.loanDetailsModel.etGroup48103708Value}"
+                        android:text="@={loanDetailsVM.loanDetailsModel.etLoanAmountValue}"
+                        android:textColor="@color/black"
                         android:textColorHint="@color/gray_500"
                         tools:ignore="Autofill" />
 
@@ -436,5 +435,24 @@
             app:layout_constraintStart_toEndOf="@+id/center_landing_ph"
             app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Circle"
             app:strokeColor="#607CF2" />
+
+        <RelativeLayout
+            android:id="@+id/progressView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#31000000"
+            android:padding="20dp"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/ProgressBar01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminate="true" />
+
+        </RelativeLayout>
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

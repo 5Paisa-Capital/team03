@@ -8,6 +8,15 @@
         android:name="com.kirtikumarsapplication.app.appcomponents.di.MyApp"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
         <activity android:exported="true"
             android:name="com.kirtikumarsapplication.app.modules.splash_screen.ui.SplashScreenActivity" android:screenOrientation="portrait">
             <intent-filter>
@@ -15,8 +24,6 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.kirtikumarsapplication.app.modules.androidlarge776.ui.AndroidLarge776Activity" android:screenOrientation="portrait"/>
         <activity
             android:name="com.kirtikumarsapplication.app.modules.personalDetails.ui.PersonalDetailsActivity" android:screenOrientation="portrait"/>
         <activity
@@ -28,6 +35,6 @@
         <activity
             android:name="com.kirtikumarsapplication.app.modules.loan_details.ui.LoanDetailsActivity" android:screenOrientation="portrait"/>
         <activity
-            android:name="com.kirtikumarsapplication.app.modules.androidlarge777.ui.AndroidLarge777Activity" android:screenOrientation="portrait"/>
+            android:name="com.kirtikumarsapplication.app.modules.final_decision.ui.FinalDecisionActivity" android:screenOrientation="portrait"/>
     </application>
 </manifest>

@@ -5,6 +5,10 @@ import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
+import com.kirtikumarsapplication.app.appcomponents.utility.PreferenceHelper
+import org.koin.android.ext.android.get
+import org.koin.android.ext.android.inject
+import org.koin.core.qualifier.named
 
 /**
  * Base class for activities that using databind feature to bind the view
@@ -19,6 +23,7 @@ abstract class BaseActivity<T : ViewDataBinding>(@LayoutRes val layoutId: Int) :
      * activity layout view binding object
      */
     lateinit var binding: T
+    val mPref: PreferenceHelper by inject()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

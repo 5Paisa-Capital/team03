@@ -7,8 +7,8 @@ import com.kirtikumarsapplication.app.modules.addressDetails.`data`.model.Addres
 import org.koin.core.KoinComponent
 
 class AddressDetailsVMVM : ViewModel(), KoinComponent {
-  val addressDetailsModel: MutableLiveData<AddressDetailsModel> =
-      MutableLiveData(AddressDetailsModel())
+    val addressDetailsModel: MutableLiveData<AddressDetailsModel> = MutableLiveData(AddressDetailsModel())
 
-  var navArguments: Bundle? = null
+    var navArguments: Bundle? = null
+
 }

@@ -14,12 +14,39 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <FrameLayout
+            android:id="@+id/frameStack"
+            style="@style/groupStylewhite_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_62pxv"
+            android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageImage726"
+                android:layout_width="@dimen/_120pxh"
+                android:layout_height="@dimen/_22pxh"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_40pxh"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_marginEnd="@dimen/_40pxh"
+                android:layout_marginBottom="@dimen/_19pxv"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_image726"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_image726" />
+        </FrameLayout>
+
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toTopOf="@+id/save_as_draft_btn"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameStack">
 
             <LinearLayout
                 android:id="@+id/linearAndroidLarge"
@@ -28,28 +55,6 @@
                 android:layout_height="match_parent"
                 android:gravity="start"
                 android:orientation="vertical">
-
-                <FrameLayout
-                    android:id="@+id/frameStack"
-                    style="@style/groupStylewhite_1"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_62pxv"
-                    android:gravity="start">
-
-                    <ImageView
-                        android:id="@+id/imageImage726"
-                        android:layout_width="@dimen/_120pxh"
-                        android:layout_height="@dimen/_22pxh"
-                        android:layout_gravity="center"
-                        android:layout_marginStart="@dimen/_40pxh"
-                        android:layout_marginTop="@dimen/_20pxv"
-                        android:layout_marginEnd="@dimen/_40pxh"
-                        android:layout_marginBottom="@dimen/_19pxv"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/img_image726"
-                        tools:ignore="ContentDescription"
-                        tools:src="@drawable/img_image726" />
-                </FrameLayout>
 
                 <LinearLayout
                     android:id="@+id/linearColumnOne"
@@ -83,6 +88,7 @@
                             android:singleLine="true"
                             android:text="@{professionalDetailsVM.professionalDetailsModel.txtProfessionalDe}"
                             tools:text="@string/msg_professional_de" />
+
                         <FrameLayout
                             android:id="@+id/frameStackgroup18606"
                             android:layout_width="@dimen/_320pxh"
@@ -131,16 +137,16 @@
 
                                 <View
                                     android:id="@+id/viewRectangle30405"
-                                    android:layout_width="@dimen/_8pxh"
-                                    android:layout_height="@dimen/_8pxh"
+                                    android:layout_width="@dimen/_6pxh"
+                                    android:layout_height="@dimen/_6pxh"
                                     android:layout_gravity="start"
                                     android:background="@drawable/rectangle_bg_white_a700_radius_4" />
                             </LinearLayout>
 
                             <View
                                 android:id="@+id/viewRectangle5396"
-                                android:layout_width="@dimen/_8pxh"
-                                android:layout_height="@dimen/_8pxh"
+                                android:layout_width="@dimen/_6pxh"
+                                android:layout_height="@dimen/_6pxh"
                                 android:layout_gravity="end"
                                 android:layout_marginStart="@dimen/_125pxh"
                                 android:layout_marginEnd="@dimen/_125pxh"
@@ -148,8 +154,8 @@
 
                             <View
                                 android:id="@+id/viewRectangle30403"
-                                android:layout_width="@dimen/_8pxh"
-                                android:layout_height="@dimen/_8pxh"
+                                android:layout_width="@dimen/_6pxh"
+                                android:layout_height="@dimen/_6pxh"
                                 android:layout_gravity="end"
                                 android:layout_marginStart="@dimen/_62pxh"
                                 android:layout_marginEnd="@dimen/_62pxh"
@@ -157,8 +163,8 @@
 
                             <View
                                 android:id="@+id/viewRectangle30404"
-                                android:layout_width="@dimen/_8pxh"
-                                android:layout_height="@dimen/_8pxh"
+                                android:layout_width="@dimen/_6pxh"
+                                android:layout_height="@dimen/_6pxh"
                                 android:layout_gravity="end"
                                 android:layout_marginStart="@dimen/_10pxh"
                                 android:layout_marginEnd="@dimen/_1pxh"
@@ -166,8 +172,8 @@
 
                             <View
                                 android:id="@+id/viewRectangle5398"
-                                android:layout_width="@dimen/_8pxh"
-                                android:layout_height="@dimen/_8pxh"
+                                android:layout_width="@dimen/_6pxh"
+                                android:layout_height="@dimen/_6pxh"
                                 android:layout_gravity="start"
                                 android:layout_marginStart="@dimen/_124pxh"
                                 android:layout_marginEnd="@dimen/_124pxh"
@@ -175,8 +181,8 @@
 
                             <View
                                 android:id="@+id/viewRectangle30406"
-                                android:layout_width="@dimen/_8pxh"
-                                android:layout_height="@dimen/_8pxh"
+                                android:layout_width="@dimen/_6pxh"
+                                android:layout_height="@dimen/_6pxh"
                                 android:layout_gravity="start"
                                 android:layout_marginStart="@dimen/_62pxh"
                                 android:layout_marginEnd="@dimen/_62pxh"
@@ -283,12 +289,6 @@
                             tools:ignore="ContentDescription"
                             tools:src="@drawable/img_image727" />
 
-                        <View
-                            android:id="@+id/viewRectangle29401"
-                            android:layout_width="@dimen/_71pxh"
-                            android:layout_height="@dimen/_71pxh"
-                            android:layout_gravity="start"
-                            android:background="@drawable/rectangle_bg_indigo_a200_radius_6" />
                     </FrameLayout>
 
                     <LinearLayout
@@ -362,7 +362,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/etGroup48103699"
+                    android:id="@+id/etOccupation"
                     style="@style/etRoundedOutline_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -374,17 +374,19 @@
                     android:hint="@string/lbl_occupation"
                     android:inputType="text"
                     android:lineSpacingExtra="@dimen/_3pxh"
+                    android:maxLength="50"
                     android:paddingStart="@dimen/_16pxh"
                     android:paddingTop="@dimen/_16pxv"
                     android:paddingEnd="@dimen/_30pxh"
                     android:paddingBottom="@dimen/_14pxv"
                     android:singleLine="true"
-                    android:text="@={professionalDetailsVM.professionalDetailsModel.etGroup48103699Value}"
+                    android:text="@={professionalDetailsVM.professionalDetailsModel.etOccupationValue}"
+                    android:textColor="@color/black"
                     android:textColorHint="@color/gray_500"
                     tools:ignore="Autofill" />
 
                 <EditText
-                    android:id="@+id/etGroup48103700"
+                    android:id="@+id/etIncomeType"
                     style="@style/etRoundedOutline_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -396,17 +398,19 @@
                     android:hint="@string/lbl_income_type"
                     android:inputType="text"
                     android:lineSpacingExtra="@dimen/_3pxh"
+                    android:maxLength="50"
                     android:paddingStart="@dimen/_16pxh"
                     android:paddingTop="@dimen/_16pxv"
                     android:paddingEnd="@dimen/_30pxh"
                     android:paddingBottom="@dimen/_14pxv"
                     android:singleLine="true"
-                    android:text="@={professionalDetailsVM.professionalDetailsModel.etGroup48103700Value}"
+                    android:text="@={professionalDetailsVM.professionalDetailsModel.etIncomeTypeValue}"
+                    android:textColor="@color/black"
                     android:textColorHint="@color/gray_500"
                     tools:ignore="Autofill" />
 
                 <EditText
-                    android:id="@+id/etGroup48103701"
+                    android:id="@+id/etMonthlyIncome"
                     style="@style/etRoundedOutline_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -418,12 +422,14 @@
                     android:hint="@string/lbl_monthly_income"
                     android:inputType="text"
                     android:lineSpacingExtra="@dimen/_3pxh"
+                    android:maxLength="50"
                     android:paddingStart="@dimen/_16pxh"
                     android:paddingTop="@dimen/_16pxv"
                     android:paddingEnd="@dimen/_30pxh"
                     android:paddingBottom="@dimen/_14pxv"
                     android:singleLine="true"
-                    android:text="@={professionalDetailsVM.professionalDetailsModel.etGroup48103701Value}"
+                    android:text="@={professionalDetailsVM.professionalDetailsModel.etMonthlyIncomeValue}"
+                    android:textColor="@color/black"
                     android:textColorHint="@color/gray_500"
                     tools:ignore="Autofill" />
             </LinearLayout>
@@ -488,5 +494,24 @@
             app:layout_constraintStart_toEndOf="@+id/center_landing_ph"
             app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Circle"
             app:strokeColor="#607CF2" />
+
+
+        <RelativeLayout
+            android:id="@+id/progressView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#31000000"
+            android:padding="20dp"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/ProgressBar01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminate="true" />
+
+        </RelativeLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

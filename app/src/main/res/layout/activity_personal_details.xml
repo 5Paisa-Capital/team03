@@ -14,12 +14,39 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <FrameLayout
+            android:id="@+id/frameStack"
+            style="@style/groupStylewhite_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_62pxv"
+            android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageImage726"
+                android:layout_width="@dimen/_120pxh"
+                android:layout_height="@dimen/_22pxh"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_40pxh"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_marginEnd="@dimen/_40pxh"
+                android:layout_marginBottom="@dimen/_19pxv"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_image726"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_image726" />
+        </FrameLayout>
+
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toTopOf="@+id/save_as_draft_btn"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameStack">
 
             <LinearLayout
                 android:id="@+id/linearAndroidLarge"
@@ -28,28 +55,6 @@
                 android:layout_height="match_parent"
                 android:gravity="start"
                 android:orientation="vertical">
-
-                <FrameLayout
-                    android:id="@+id/frameStack"
-                    style="@style/groupStylewhite_1"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_62pxv"
-                    android:layout_marginTop="@dimen/_12pxv">
-
-                    <ImageView
-                        android:id="@+id/imageImage726"
-                        android:layout_width="@dimen/_120pxh"
-                        android:layout_height="@dimen/_22pxh"
-                        android:layout_gravity="center"
-                        android:layout_marginStart="@dimen/_40pxh"
-                        android:layout_marginTop="@dimen/_20pxv"
-                        android:layout_marginEnd="@dimen/_40pxh"
-                        android:layout_marginBottom="@dimen/_19pxv"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/img_image726"
-                        tools:ignore="ContentDescription"
-                        tools:src="@drawable/img_image726" />
-                </FrameLayout>
 
                 <LinearLayout
                     android:id="@+id/linearColumnOne"
@@ -80,80 +85,104 @@
                             android:text="@{personalDetailsVM.personalDetailsVMModel.txtPersonalDetail}"
                             tools:text="@string/msg_personal_detail" />
 
-                        <FrameLayout android:id="@+id/frameStackgroup18606"
-                            android:layout_gravity="start"
+                        <FrameLayout
+                            android:id="@+id/frameStackgroup18606"
+                            android:layout_width="@dimen/_320pxh"
                             android:layout_height="@dimen/_8pxv"
-                            android:layout_marginTop="@dimen/_14pxv" android:layout_width="@dimen/_320pxh">
-                            <LinearLayout android:id="@+id/linearColumn"
-                                android:layout_gravity="start"
-                                android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_marginTop="@dimen/_14pxv">
+
+                            <LinearLayout
+                                android:id="@+id/linearColumn"
+                                style="@style/groupStylecornerRadius_1"
                                 android:layout_width="match_parent"
-                                android:orientation="vertical" style="@style/groupStylecornerRadius_1">
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:orientation="vertical">
+
                                 <LinearLayout
-                                    android:gravity="center_horizontal"
                                     android:id="@+id/linearColumngroup18606"
-                                    android:layout_height="match_parent"
+                                    style="@style/groupStylecornerRadius_1"
                                     android:layout_width="match_parent"
-                                    android:orientation="vertical" style="@style/groupStylecornerRadius_1">
-                                    <ProgressBar android:gravity="start"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <ProgressBar
                                         android:id="@+id/progressBarGroup18606"
-                                        android:indeterminate="false"
-                                        android:layout_height="wrap_content"
+                                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
                                         android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="start"
+                                        android:indeterminate="false"
                                         android:max="100"
                                         android:minHeight="@dimen/_8pxv"
                                         android:progress="18"
-                                        android:progressDrawable="@drawable/layer_list_radius_4" style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+                                        android:progressDrawable="@drawable/layer_list_radius_4" />
                                 </LinearLayout>
                             </LinearLayout>
+
                             <LinearLayout
                                 android:id="@+id/linearColumnrectangle30405"
-                                android:layout_gravity="start"
-                                android:layout_height="wrap_content"
-                                android:layout_marginEnd="@dimen/_10pxh"
+                                style="@style/groupStyledeep_purple_900_75cornerRadius"
                                 android:layout_width="wrap_content"
-                                android:orientation="vertical" style="@style/groupStyledeep_purple_900_75cornerRadius">
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:layout_marginEnd="@dimen/_10pxh"
+                                android:orientation="vertical">
+
                                 <View
-                                    android:background="@drawable/rectangle_bg_deep_purple_900_75_radius_4"
                                     android:id="@+id/viewRectangle30405"
+                                    android:layout_width="@dimen/_6pxh"
+                                    android:layout_height="@dimen/_6pxh"
                                     android:layout_gravity="start"
-                                    android:layout_height="@dimen/_8pxh" android:layout_width="@dimen/_8pxh"/>
+                                    android:background="@drawable/rectangle_bg_deep_purple_900_75_radius_4" />
                             </LinearLayout>
+
                             <View
-                                android:background="@drawable/rectangle_bg_deep_purple_900_75_radius_4"
                                 android:id="@+id/viewRectangle5396"
+                                android:layout_width="@dimen/_6pxh"
+                                android:layout_height="@dimen/_6pxh"
                                 android:layout_gravity="end"
-                                android:layout_height="@dimen/_8pxh"
+                                android:layout_marginStart="@dimen/_125pxh"
                                 android:layout_marginEnd="@dimen/_125pxh"
-                                android:layout_marginStart="@dimen/_125pxh" android:layout_width="@dimen/_8pxh"/>
+                                android:background="@drawable/rectangle_bg_deep_purple_900_75_radius_4" />
+
                             <View
-                                android:background="@drawable/rectangle_bg_deep_purple_900_75_radius_4"
                                 android:id="@+id/viewRectangle30403"
+                                android:layout_width="@dimen/_6pxh"
+                                android:layout_height="@dimen/_6pxh"
                                 android:layout_gravity="end"
-                                android:layout_height="@dimen/_8pxh"
+                                android:layout_marginStart="@dimen/_62pxh"
                                 android:layout_marginEnd="@dimen/_62pxh"
-                                android:layout_marginStart="@dimen/_62pxh" android:layout_width="@dimen/_8pxh"/>
+                                android:background="@drawable/rectangle_bg_deep_purple_900_75_radius_4" />
+
                             <View
-                                android:background="@drawable/rectangle_bg_deep_purple_900_75_radius_4"
                                 android:id="@+id/viewRectangle30404"
+                                android:layout_width="@dimen/_6pxh"
+                                android:layout_height="@dimen/_6pxh"
                                 android:layout_gravity="end"
-                                android:layout_height="@dimen/_8pxh"
+                                android:layout_marginStart="@dimen/_10pxh"
                                 android:layout_marginEnd="@dimen/_1pxh"
-                                android:layout_marginStart="@dimen/_10pxh" android:layout_width="@dimen/_8pxh"/>
+                                android:background="@drawable/rectangle_bg_deep_purple_900_75_radius_4" />
+
                             <View
-                                android:background="@drawable/rectangle_bg_deep_purple_900_75_radius_4"
                                 android:id="@+id/viewRectangle5398"
+                                android:layout_width="@dimen/_6pxh"
+                                android:layout_height="@dimen/_6pxh"
                                 android:layout_gravity="start"
-                                android:layout_height="@dimen/_8pxh"
+                                android:layout_marginStart="@dimen/_124pxh"
                                 android:layout_marginEnd="@dimen/_124pxh"
-                                android:layout_marginStart="@dimen/_124pxh" android:layout_width="@dimen/_8pxh"/>
+                                android:background="@drawable/rectangle_bg_deep_purple_900_75_radius_4" />
+
                             <View
-                                android:background="@drawable/rectangle_bg_deep_purple_900_75_radius_4"
                                 android:id="@+id/viewRectangle30406"
+                                android:layout_width="@dimen/_6pxh"
+                                android:layout_height="@dimen/_6pxh"
                                 android:layout_gravity="start"
-                                android:layout_height="@dimen/_8pxh"
+                                android:layout_marginStart="@dimen/_62pxh"
                                 android:layout_marginEnd="@dimen/_62pxh"
-                                android:layout_marginStart="@dimen/_62pxh" android:layout_width="@dimen/_8pxh"/>
+                                android:background="@drawable/rectangle_bg_deep_purple_900_75_radius_4" />
                         </FrameLayout>
 
                     </LinearLayout>
@@ -202,12 +231,6 @@
                                 tools:ignore="ContentDescription"
                                 tools:src="@drawable/img_image714" />
 
-                            <View
-                                android:id="@+id/viewRectangle29401"
-                                android:layout_width="@dimen/_71pxh"
-                                android:layout_height="@dimen/_71pxh"
-                                android:layout_gravity="start"
-                                android:background="@drawable/rectangle_bg_indigo_a200_radius_6" />
                         </FrameLayout>
 
                         <LinearLayout
@@ -279,6 +302,7 @@
                         </LinearLayout>
                     </LinearLayout>
 
+
                     <EditText
                         android:id="@+id/etFN"
                         style="@style/etSolidRoundedOutline"
@@ -287,7 +311,7 @@
                         android:layout_marginStart="@dimen/_20pxh"
                         android:layout_marginTop="@dimen/_32pxv"
                         android:layout_marginEnd="@dimen/_20pxh"
-                        android:background="@drawable/rectangle_bg_gray_100_border_indigo_a200_radius_7"
+                        android:background="@drawable/rectangle_border_gray_401_radius_7"
                         android:ellipsize="end"
                         android:hint="@string/lbl_first_name"
                         android:inputType="text"
@@ -297,9 +321,11 @@
                         android:paddingEnd="@dimen/_30pxh"
                         android:paddingBottom="@dimen/_15pxv"
                         android:singleLine="true"
-                        android:text="@={personalDetailsVM.personalDetailsVMModel.etLanguageValue}"
-                        android:textColorHint="@color/gray_700"
+                        android:text="@={personalDetailsVM.personalDetailsVMModel.etFirstNameValue}"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray_500"
                         tools:ignore="Autofill" />
+
 
                     <EditText
                         android:id="@+id/etLN"
@@ -309,7 +335,7 @@
                         android:layout_marginStart="@dimen/_20pxh"
                         android:layout_marginTop="@dimen/_28pxv"
                         android:layout_marginEnd="@dimen/_20pxh"
-                        android:background="@drawable/rectangle_bg_gray_100_border_indigo_a200_radius_7"
+                        android:background="@drawable/rectangle_border_gray_401_radius_7"
                         android:ellipsize="end"
                         android:hint="@string/lbl_last_name"
                         android:inputType="text"
@@ -319,9 +345,11 @@
                         android:paddingEnd="@dimen/_30pxh"
                         android:paddingBottom="@dimen/_14pxv"
                         android:singleLine="true"
-                        android:text="@={personalDetailsVM.personalDetailsVMModel.etLanguageOneValue}"
-                        android:textColorHint="@color/gray_700"
+                        android:text="@={personalDetailsVM.personalDetailsVMModel.etLastNameValue}"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray_500"
                         tools:ignore="Autofill" />
+
 
                     <EditText
                         android:id="@+id/etMobileNo"
@@ -331,19 +359,20 @@
                         android:layout_marginStart="@dimen/_20pxh"
                         android:layout_marginTop="@dimen/_28pxv"
                         android:layout_marginEnd="@dimen/_20pxh"
-                        android:background="@drawable/rectangle_bg_gray_100_border_indigo_a200_radius_7"
+                        android:background="@drawable/rectangle_border_gray_401_radius_7"
                         android:ellipsize="end"
                         android:hint="@string/lbl_mobile_number"
-                        android:inputType="phone"
+                        android:inputType="number"
                         android:lineSpacingExtra="@dimen/_3pxh"
+                        android:maxLength="10"
                         android:paddingStart="@dimen/_16pxh"
                         android:paddingTop="@dimen/_15pxv"
                         android:paddingEnd="@dimen/_30pxh"
                         android:paddingBottom="@dimen/_15pxv"
                         android:singleLine="true"
                         android:text="@={personalDetailsVM.personalDetailsVMModel.etMobileNoValue}"
-                        android:textColorHint="@color/gray_700"
-                        tools:ignore="Autofill" />
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray_500" />
 
                 </LinearLayout>
             </LinearLayout>
@@ -408,5 +437,24 @@
             app:layout_constraintStart_toEndOf="@+id/center_landing_ph"
             app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Circle"
             app:strokeColor="#607CF2" />
+
+
+        <RelativeLayout
+            android:id="@+id/progressView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#31000000"
+            android:padding="20dp"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/ProgressBar01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminate="true" />
+
+        </RelativeLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

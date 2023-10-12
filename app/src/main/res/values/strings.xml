@@ -6,7 +6,7 @@
     <string name="lbl_continue">Continue</string>
     <string name="lbl_ldwps1756p">LDWPS1756P</string>
     <string name="lbl_city">City</string>
-    <string name="lbl_buy_house">Buy House</string>
+    <string name="lbl_buy_house">Do you want to buy house? Yes/No</string>
     <string name="msg_rb_iii_colony">RB III Colony, room no 32/15</string>
     <string name="lbl_loan_type">Loan Type</string>
     <string name="msg_tell_us_about_y">Tell us about your purpose</string>
@@ -64,4 +64,5 @@
     <string name="msg_please_enter_valid_phone_nu">Please enter valid phone number</string>
     <string name="msg_please_enter_valid_text">Please enter valid text</string>
     <string name="msg_please_enter_valid_nu">Please enter valid number</string>
+    <string name="error_space">.\u0020\u0020</string>
 </resources>

@@ -14,12 +14,39 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <FrameLayout
+            android:id="@+id/frameStack"
+            style="@style/groupStylewhite_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_62pxv"
+            android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageImage726"
+                android:layout_width="@dimen/_120pxh"
+                android:layout_height="@dimen/_22pxh"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_40pxh"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_marginEnd="@dimen/_40pxh"
+                android:layout_marginBottom="@dimen/_19pxv"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_image726"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_image726" />
+        </FrameLayout>
+
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toTopOf="@+id/save_as_draft_btn"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameStack">
 
             <LinearLayout
                 android:id="@+id/linearAndroidLarge"
@@ -28,28 +55,6 @@
                 android:layout_height="match_parent"
                 android:gravity="start"
                 android:orientation="vertical">
-
-                <FrameLayout
-                    android:id="@+id/frameStack"
-                    style="@style/groupStylewhite_1"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_62pxv"
-                    android:layout_marginTop="@dimen/_12pxv">
-
-                    <ImageView
-                        android:id="@+id/imageImage726"
-                        android:layout_width="@dimen/_120pxh"
-                        android:layout_height="@dimen/_22pxh"
-                        android:layout_gravity="center"
-                        android:layout_marginStart="@dimen/_40pxh"
-                        android:layout_marginTop="@dimen/_20pxv"
-                        android:layout_marginEnd="@dimen/_40pxh"
-                        android:layout_marginBottom="@dimen/_19pxv"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/img_image726"
-                        tools:ignore="ContentDescription"
-                        tools:src="@drawable/img_image726" />
-                </FrameLayout>
 
                 <LinearLayout
                     android:id="@+id/linearColumnOne"
@@ -128,16 +133,16 @@
 
                                 <View
                                     android:id="@+id/viewRectangle30405"
-                                    android:layout_width="@dimen/_8pxh"
-                                    android:layout_height="@dimen/_8pxh"
+                                    android:layout_width="@dimen/_6pxh"
+                                    android:layout_height="@dimen/_6pxh"
                                     android:layout_gravity="start"
                                     android:background="@drawable/rectangle_bg_deep_purple_900_75_radius_4" />
                             </LinearLayout>
 
                             <View
                                 android:id="@+id/viewRectangle5396"
-                                android:layout_width="@dimen/_8pxh"
-                                android:layout_height="@dimen/_8pxh"
+                                android:layout_width="@dimen/_6pxh"
+                                android:layout_height="@dimen/_6pxh"
                                 android:layout_gravity="end"
                                 android:layout_marginStart="@dimen/_125pxh"
                                 android:layout_marginEnd="@dimen/_125pxh"
@@ -145,8 +150,8 @@
 
                             <View
                                 android:id="@+id/viewRectangle30403"
-                                android:layout_width="@dimen/_8pxh"
-                                android:layout_height="@dimen/_8pxh"
+                                android:layout_width="@dimen/_6pxh"
+                                android:layout_height="@dimen/_6pxh"
                                 android:layout_gravity="end"
                                 android:layout_marginStart="@dimen/_62pxh"
                                 android:layout_marginEnd="@dimen/_62pxh"
@@ -154,8 +159,8 @@
 
                             <View
                                 android:id="@+id/viewRectangle30404"
-                                android:layout_width="@dimen/_8pxh"
-                                android:layout_height="@dimen/_8pxh"
+                                android:layout_width="@dimen/_6pxh"
+                                android:layout_height="@dimen/_6pxh"
                                 android:layout_gravity="end"
                                 android:layout_marginStart="@dimen/_10pxh"
                                 android:layout_marginEnd="@dimen/_1pxh"
@@ -163,8 +168,8 @@
 
                             <View
                                 android:id="@+id/viewRectangle5398"
-                                android:layout_width="@dimen/_8pxh"
-                                android:layout_height="@dimen/_8pxh"
+                                android:layout_width="@dimen/_6pxh"
+                                android:layout_height="@dimen/_6pxh"
                                 android:layout_gravity="start"
                                 android:layout_marginStart="@dimen/_124pxh"
                                 android:layout_marginEnd="@dimen/_124pxh"
@@ -172,8 +177,8 @@
 
                             <View
                                 android:id="@+id/viewRectangle30406"
-                                android:layout_width="@dimen/_8pxh"
-                                android:layout_height="@dimen/_8pxh"
+                                android:layout_width="@dimen/_6pxh"
+                                android:layout_height="@dimen/_6pxh"
                                 android:layout_gravity="start"
                                 android:layout_marginStart="@dimen/_62pxh"
                                 android:layout_marginEnd="@dimen/_62pxh"
@@ -225,12 +230,6 @@
                                 tools:ignore="ContentDescription"
                                 tools:src="@drawable/img_image716" />
 
-                            <View
-                                android:id="@+id/viewRectangle29401"
-                                android:layout_width="@dimen/_71pxh"
-                                android:layout_height="@dimen/_71pxh"
-                                android:layout_gravity="start"
-                                android:background="@drawable/rectangle_bg_indigo_a200_radius_6" />
                         </FrameLayout>
 
                         <LinearLayout
@@ -259,11 +258,11 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/_8pxv"
                                 android:ellipsize="end"
-                                android:gravity="center_horizontal"
                                 android:lineSpacingExtra="@dimen/_3pxh"
                                 android:singleLine="true"
                                 android:text="@{identityProofVM.identityProofModel.txtProvideYourGo}"
-                                tools:text="@string/msg_provide_your_go" />
+                                android:textAlignment="textStart"
+                                tools:text="@string/msg_verify_your_ide" />
 
                             <LinearLayout
                                 android:id="@+id/linearRowcheckmark"
@@ -304,7 +303,7 @@
                     </LinearLayout>
 
                     <EditText
-                        android:id="@+id/etGroup48103694"
+                        android:id="@+id/etAadhaarNo"
                         style="@style/etRoundedOutline_1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -316,17 +315,19 @@
                         android:hint="@string/lbl_aadhaar_number"
                         android:inputType="number"
                         android:lineSpacingExtra="@dimen/_3pxh"
+                        android:maxLength="12"
                         android:paddingStart="@dimen/_16pxh"
                         android:paddingTop="@dimen/_15pxv"
                         android:paddingEnd="@dimen/_30pxh"
                         android:paddingBottom="@dimen/_15pxv"
                         android:singleLine="true"
-                        android:text="@={identityProofVM.identityProofModel.etGroup48103694Value}"
+                        android:text="@={identityProofVM.identityProofModel.etAadhaarNoValue}"
+                        android:textColor="@color/black"
                         android:textColorHint="@color/gray_500"
                         tools:ignore="Autofill" />
 
                     <EditText
-                        android:id="@+id/etGroup48103696"
+                        android:id="@+id/etPANNumber"
                         style="@style/etRoundedOutline_1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -336,14 +337,16 @@
                         android:background="@drawable/rectangle_border_gray_401_radius_7"
                         android:ellipsize="end"
                         android:hint="@string/lbl_pan_number"
-                        android:inputType="text"
+                        android:inputType="textCapCharacters"
                         android:lineSpacingExtra="@dimen/_3pxh"
+                        android:maxLength="10"
                         android:paddingStart="@dimen/_16pxh"
                         android:paddingTop="@dimen/_15pxv"
                         android:paddingEnd="@dimen/_30pxh"
                         android:paddingBottom="@dimen/_15pxv"
                         android:singleLine="true"
-                        android:text="@={identityProofVM.identityProofModel.etGroup48103696Value}"
+                        android:text="@={identityProofVM.identityProofModel.etPANNumberValue}"
+                        android:textColor="@color/black"
                         android:textColorHint="@color/gray_500"
                         tools:ignore="Autofill" />
                 </LinearLayout>
@@ -409,5 +412,23 @@
             app:layout_constraintStart_toEndOf="@+id/center_landing_ph"
             app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Circle"
             app:strokeColor="#607CF2" />
+
+        <RelativeLayout
+            android:id="@+id/progressView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#31000000"
+            android:padding="20dp"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/ProgressBar01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminate="true" />
+
+        </RelativeLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

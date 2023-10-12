@@ -16,24 +16,8 @@ data class LoanDetailsModel(
   var txtTellusabouty: String? =
       MyApp.getInstance().resources.getString(R.string.msg_tell_us_about_y)
   ,
-  /**
-   * TODO Replace with dynamic value
-   */
-  var txtShareyourloan: String? =
-      MyApp.getInstance().resources.getString(R.string.msg_share_your_loan)
-  ,
-  /**
-   * TODO Replace with dynamic value
-   */
-  var txt100Datasecur: String? =
-      MyApp.getInstance().resources.getString(R.string.msg_100_data_secur)
-  ,
-  /**
-   * TODO Replace with dynamic value
-   */
-  var etGroup48103700Value: String? = null,
-  /**
-   * TODO Replace with dynamic value
-   */
-  var etGroup48103708Value: String? = null
+  var txtShareyourloan: String? = MyApp.getInstance().resources.getString(R.string.msg_share_your_loan),
+  var txt100Datasecur: String? = MyApp.getInstance().resources.getString(R.string.msg_100_data_secur),
+  var etLoanTypeValue: String? = null,
+  var etLoanAmountValue: String? = null
 )
