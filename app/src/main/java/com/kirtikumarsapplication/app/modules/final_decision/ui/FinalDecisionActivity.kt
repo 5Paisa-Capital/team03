@@ -61,9 +61,16 @@ class FinalDecisionActivity :
         parameters.indexName = "newindex01";
         dataSource.setParameters(parameters)
 
+        val buyHouse = SplashScreenModel.userDataDump.getPermanentAddress()
+        var sameCity = "";
+        if (buyHouse.equals("yes", true)) {
+            sameCity = "same"
+        } else if (buyHouse.equals("no", true)) {
+            sameCity = "another"
+        }
+
         dataSources.add(dataSource)
-        val message =
-            "My name is ${SplashScreenModel.userDataDump.getName()}, aadhaar number is ${SplashScreenModel.userDataDump.getAadhaarNo()}, PAN card no is ${SplashScreenModel.userDataDump.getPanNo()}.My age is 22. My Income is ${SplashScreenModel.userDataDump.getIncome()} per month. I want direct housing finance a house.I have a ${SplashScreenModel.userDataDump.getIsRented()} house in ${SplashScreenModel.userDataDump.getCurrentAddress()} City and I want to finance another house in ${SplashScreenModel.userDataDump.getPermanentAddress()} City."
+        val message = "My name is ${SplashScreenModel.userDataDump.getName()}, aadhaar number is ${SplashScreenModel.userDataDump.getAadhaarNo()}, PAN card no is ${SplashScreenModel.userDataDump.getPanNo()}.My age is 22. My Income is ${SplashScreenModel.userDataDump.getIncome()} per month. I want direct housing finance a house.I have a ${SplashScreenModel.userDataDump.getIsRented()} house in ${SplashScreenModel.userDataDump.getCurrentAddress()} City and I want to finance another house in $sameCity City."
         val finalMessage = "$message Can I pursue the loan? Answer in one word."
         val messages: ArrayList<Message> = ArrayList()
         val msg = Message()
